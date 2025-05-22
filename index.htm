@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    
+
+    <p style ="color:rgb(105, 5, 5)">
+   hola  </p>
+   <p>Este es el segundo párrafo</p>
+   <p>Este es el tercer párrafo</p>
+        
+    </body>
+    <script>    
+let elementos = document.getElementsByTagName("p")
+elementos[0].style.color="yellow"
+let verde=130
+let azul= 149
+let rojo= 200
+let coma=","
+let col="rgb("+rojo+coma+verde+coma+azul+")"
+elementos[0].style.backgroundColor=col
+function reg(rojo,verde,azul,id){
+let col="rgb("+rojo+coma+verde+coma+azul+")"
+elementos[id].style.backgroundColor=col
+}
+reg(40,30,120,0)
+reg(10,200,100,1) // Segundo párrafo
+reg(255,255,0,2)  // Tercer párrafo
+
+    </script>
+</html>
