@@ -31,6 +31,15 @@
         let coma = ","
         let col = "rgb(" + rojo + coma + verde + coma + azul + ")"
         elementos[0].style.backgroundColor = col
+
+        // Nuevas variables
+        let nombre = "Martin"
+        let edad = 25
+        let esEstudiante = true
+        let coloresFavoritos = ["rojo", "verde", "azul"]
+        let usuario = { nombre: "Ana", activo: false }
+        let resultado = null
+
         function reg(rojo, verde, azul, id) {
             let col = "rgb(" + rojo + coma + verde + coma + azul + ")"
             elementos[id].style.backgroundColor = col
@@ -43,7 +52,7 @@
         function cambiarTitulo() {
             let titulo = document.getElementById("titulo")
             titulo.innerHTML = "Hola, soy Martin"
-</html></body>    </script>        }        }
+        }
     </script>
 </body>
 </html>
